@@ -43,7 +43,7 @@ public class CoffeeMenu extends Activity {
 		menu.add(Menu.NONE, Menu.FIRST + 1, 1, "Menu").setIcon(android.R.drawable.ic_menu_add);
 		menu.add(Menu.NONE, Menu.FIRST + 2, 2, "Light").setIcon(android.R.drawable.ic_menu_edit);
 		menu.add(Menu.NONE, Menu.FIRST + 3, 3, "Door").setIcon(android.R.drawable.ic_menu_send);
-		menu.add(Menu.NONE, Menu.FIRST + 4, 4, "kaffe maskinen").setIcon(android.R.drawable.ic_menu_info_details);
+		menu.add(Menu.NONE, Menu.FIRST + 4, 4, "Coffee Machine").setIcon(android.R.drawable.ic_menu_info_details);
 		// menu.add(Menu.NONE, Menu.FIRST + 5, 5, "sth4").setIcon(android.R.drawable.ic_menu_delete);
 		// menu.add(Menu.NONE, Menu.FIRST + 6, 6,
 		// "sth5").setIcon(android.R.drawable.ic_menu_help);
