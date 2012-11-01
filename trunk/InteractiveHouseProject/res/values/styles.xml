@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- default android style -->
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <!-- Style for buttons -->
+    <style name="buttonStyle" parent="android:Theme.Light">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Style for text -->
+    <style name="textStyle" parent="android:Theme.Light">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#47DF65</item>
+    </style>
+
+    <!-- Style for version text -->
+    <style name="versionStyle" parent="android:Theme.Light">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#DFCB47</item>
+    </style>
+
+</resources>

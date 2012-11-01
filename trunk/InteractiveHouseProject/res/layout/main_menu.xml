@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <!-- set background.png as background -->
+
+
+    <!-- setup version text -->
+    <!-- set string (strings.xml) and style (styles.xml -->
+
+
+    <!-- setup register button -->
+    <!-- set selector.xml as image scroller -->
+    <!-- set string (strings.xml) and style (styles.xml -->
+
+
+    <!-- setup quit button -->
+    <!-- set exit.png as image -->
+    <!-- set string (strings.xml) and style (styles.xml -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/speechButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="226dp"
+            android:background="@drawable/mic" />
+
+        <Button
+            android:id="@+id/quitButton"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/exit" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/login"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#555555"
+        android:textSize="15dp" />
+
+    <!-- setup password field -->
+    <!-- set string (strings.xml) and style (styles.xml -->
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#555555"
+        android:textSize="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- setup login button -->
+    <!-- set selector.xml as image scroller -->
+    <!-- set string (strings.xml) and style (styles.xml -->
+
+
+    <!-- setup speech button -->
+
+    <CheckBox
+        android:id="@+id/checkSave"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credentials"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector"
+        android:text="@string/login"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/selector"
+        android:text="@string/register"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versionText"
+        android:textColor="#777777" />
+
+</LinearLayout>

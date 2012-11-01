@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <!-- set bg2.jpg as background -->
+
+    <ImageView
+        android:id="@+id/musicOnImage"
+       android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/musicon"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/musicOffImage"
+     android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/musicoff"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/previousButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/musicOnImage"
+        android:layout_below="@+id/musicOnImage"
+        android:layout_marginTop="48dp"
+        android:onClick="previous"
+        android:src="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/soundDownButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/previousButton"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/previousButton"
+        android:onClick="down"
+        android:src="@drawable/sounddown" />
+
+    <ImageView
+        android:id="@+id/soundUpButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/soundDownButton"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/soundDownButton"
+        android:onClick="up"
+        android:src="@drawable/soundup" />
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/musicOnImage"
+        android:layout_alignTop="@+id/soundUpButton"
+        android:onClick="next"
+        android:src="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/stopButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/soundUpButton"
+        android:layout_below="@+id/soundUpButton"
+        android:layout_marginTop="14dp"
+        android:onClick="stop"
+        android:src="@drawable/buttonstop" />
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/stopButton"
+        android:layout_toLeftOf="@+id/soundUpButton"
+        android:onClick="play"
+        android:src="@drawable/buttonplay" />
+
+</RelativeLayout>

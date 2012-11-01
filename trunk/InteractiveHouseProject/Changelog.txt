@@ -1,0 +1,159 @@
+--------------------------------------------------------------------------------------
+
+Unit development 2:
+
+Implemented:
+
+Animated splash screen [X]
+Register menu [X]
+Login menu [X]
+User can input username and password [X]
+Exit button [X]
+Voice recognition on login screen [X]
+Accelerometer to login on Main menu [X] //not working properly/to sensitive
+implemented Styles.xml [X]
+Added custom fonts [X]
+Added bakground image [X]
+Added menu buttons with selector states normal,hover and pressed [X]
+Added light on/off images [X]
+Added application Icon [X]
+version text [X]
+Get all strings in XML documents from String.xml
+Fixed screen orientation portrait mode [X]
+Intent call to Login,Main menu,Register and Device menu [X]
+changed app_name [X]
+no_title bar and fullscreen mode [X]
+Device unit light on/off [X]
+
+Not implemented:
+
+background for menus except MainMenu.java [] 
+help button []
+logout button []
+Accelerometer on device menu [X]
+new speech recognition icon []
+help dialog on all menus []
+Toast user Errors []
+change buttonlisteners to a switch/case statement []
+fix onPause,onResume []
+
+Bugs:
+
+Saved credentials not saving or cant load [X]
+You can have empty username or password [X]
+buttons and textfields are not positioned properly [X] //Markus
+Setting secondary bakground image for other menus, forceclose app in emulator []
+Force close when using speech recognition []
+Exit button only close activity not whole application []
+
+classes/XML/various files commentated and warning supressed:
+
+Classes:
+DeviceMenu.java [X]
+LoginMenu.java [X]
+MainMenu.java [X]
+Register.java [X]
+Splash.java [X]
+
+Layout:
+device_menu.xml [X]
+login_menu.xml [X]
+main_menu.xml [X]
+register.xml [/]
+splash.xml [X]
+
+Values:
+strings.xml [X]
+styles.xml [X]
+
+--------------------------------------------------------------------------------------
+
+Unit development 1:
+
+Implemented:
+
+Not implemented:
+
+Bugs:
+
+classes/xml files and various files commentated:
+
+Classes:
+
+Layout:
+
+Values:
+
+--------------------------------------------------------------------------------------
+
+Sever/database
+
+Implemented:
+
+Not implemented:
+
+Bugs:
+
+classes/xml files and various files commentated:
+
+Classes:
+
+Layout:
+
+Values:
+
+--------------------------------------------------------------------------------------
+
+Protocol
+
+Implemented:
+
+Not implemented:
+
+Bugs:
+
+classes/xml files and various files commentated:
+
+Classes:
+
+Layout:
+
+Values:
+
+--------------------------------------------------------------------------------------
+
+Software
+
+Implemented:
+
+Not implemented:
+
+Bugs:
+
+classes/xml files and various files commentated:
+
+Classes:
+
+Layout:
+
+Values:
+
+--------------------------------------------------------------------------------------
+
+Physical Devices
+
+Implemented:
+
+Not implemented:
+
+Bugs:
+
+classes/xml files and various files commentated:
+
+Classes:
+
+Layout:
+
+Values:
+
+--------------------------------------------------------------------------------------
