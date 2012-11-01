@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Strings to be used in application -->
+    <string name="appname">Smart-House</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">Smart-House</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="usernameText">Username</string>
+    <string name="passwordText">Password</string>
+    <string name="quitText">Quit</string>
+    <string name="versionText">Version: 0.007b</string>
+    <string name="credentials">Save Credentials</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_login_menu">LoginMenu</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_device_menu">DeviceMenu</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+    <string name="listdevices">List Devices</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="contentdesc">Content Description</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+</resources>

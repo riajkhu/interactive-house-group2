@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <!-- set string (strings.xml) and style (styles.xml -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/usernameText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/userNameField"
+        style="@style/textStyle"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#555555"
+        android:textSize="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/passwordText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        style="@style/textStyle"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#555555"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/selector"
+        android:text="@string/confirm"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector"
+        android:text="@string/back"
+        android:textSize="15dp" />
+
+</LinearLayout>

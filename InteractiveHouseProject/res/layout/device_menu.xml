@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <!-- set bg2.jpg as background -->
+
+
+    <!-- imageview to display images -->
+
+    <ImageView
+        android:id="@+id/deviceUnitImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:contentDescription="@string/contentdesc"
+        android:src="@drawable/lightoff" />
+
+    <!-- initialize light on button -->
+    <!-- set selector.xml as background -->
+
+    <Button
+        android:id="@+id/lightOnButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonoff"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+    <!-- initialize light off button -->
+    <!-- set selector.xml as background -->
+
+</LinearLayout>

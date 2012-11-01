@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <!-- set bg2.jpg as background -->
+
+
+    <!-- imageview to display light off image -->
+
+    <ImageView
+        android:id="@+id/lightOffImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/lightoff"
+        android:visibility="visible" />
+
+    <!-- imageview to display light off image -->
+
+    <ImageView
+        android:id="@+id/lightOnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/lighton"
+        android:visibility="invisible" />
+
+    <!-- initialize light off button -->
+
+    <ImageView
+        android:id="@+id/lightOffButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lightOffImage"
+        android:layout_centerHorizontal="true"
+        android:onClick="off"
+        android:src="@drawable/buttonoff"
+        android:visibility="visible" />
+
+    <!-- initialize light on button -->
+
+    <ImageView
+        android:id="@+id/lightOnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lightOnImage"
+        android:layout_centerHorizontal="true"
+        android:onClick="on"
+        android:src="@drawable/buttonon"
+        android:visibility="invisible" />
+
+</RelativeLayout>

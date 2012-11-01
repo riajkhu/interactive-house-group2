@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/indoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/outdoor"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/indoorButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:text="In door"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/outdoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/indoor"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/outdoorButton"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:text="Out door"
+        android:textSize="18dp" />
+
+</LinearLayout>
