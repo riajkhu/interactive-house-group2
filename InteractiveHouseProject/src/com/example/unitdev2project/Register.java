@@ -1,7 +1,11 @@
 package com.example.unitdev2project;
 
+import java.util.Random;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.view.Menu;
@@ -25,6 +29,7 @@ public class Register extends Activity {
 	EditText userNameField;
 	String userText = null;
 	String passText = null;
+	String uniqueID = null;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -68,6 +73,8 @@ public class Register extends Activity {
 				if (userNameField.getText().length() >= 3 && passwordField.getText().length() >= 3) {
 					userText = userNameField.getText().toString();
 					passText = passwordField.getText().toString();
+					
+
 					Intent mainMenuIntent = new Intent(
 							"android.intent.action.MainMenu");
 					startActivity(mainMenuIntent);
