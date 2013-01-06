@@ -1,7 +1,12 @@
 package com.example.unitdev2project;
 
+import java.util.Random;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
@@ -10,14 +15,17 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.speech.RecognizerIntent;
+import android.text.Editable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainMenu extends Activity implements SensorEventListener {
 
@@ -39,6 +47,21 @@ public class MainMenu extends Activity implements SensorEventListener {
 	String savePassword; //string to save password
 	String loadUsername; //string to load username
 	String loadPassword; //string to load password
+	
+	private ViewGroup layoutmain;
+	private ViewGroup layoutnext;
+	
+	private Button btn_MainLast;
+	private Button btn_MainNext;
+	private Button btn_NextLast;
+	private Button btn_NextNext;
+	
+	private Rotate3D lQuest1Animation;
+	private Rotate3D lQuest2Animation;
+	private Rotate3D rQuest1Animation;
+	private Rotate3D rQuest2Animation;
+	private int mCenterX = 160;	
+	private int mCenterY = 240;		
 	//public so other activities can use it, static so we dont change it
 	public static String saveFile = "sharedpref"; //file of saved contents
 	SharedPreferences sharedData;
@@ -211,17 +234,47 @@ public class MainMenu extends Activity implements SensorEventListener {
 		//start loginMenu activity
       //  Intent loginIntent = new Intent("android.intent.action.LoginMenu");
 		//Intent loginIntent = new Intent("android.intent.action.DeviceMenu");
-		Intent loginIntent = new Intent().setClass(MainMenu.this, OptionMenu.class);
+		Intent loginIntent = new Intent().setClass(MainMenu.this, New_option.class);
 		startActivity(loginIntent);
 	}
 
 	public void register() { // register method
 		//start Register activity
-        Intent registerIntent = new Intent("android.intent.action.Register");
-		startActivity(registerIntent);	
+		AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+		alert.setTitle("Title");
+		alert.setMessage("Message");
+
+		// Set an EditText view to get user input 
+		final EditText input = new EditText(this);
+		alert.setView(input);
+
+		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+		public void onClick(DialogInterface dialog, int whichButton) {
+		  String value = input.getText().toString();
+		  if(value.equalsIgnoreCase("111111"))
+		    startRegister();
+		  else {
+			  Toast.makeText(getApplicationContext(),
+						"Wrong Pin code",
+						Toast.LENGTH_LONG).show();
+		  }}
+		});
+
+		alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+		  public void onClick(DialogInterface dialog, int whichButton) {
+		    // Canceled.
+		  }
+		});
+	alert.show();
+	    
+ 
 
 	}
-
+	public void startRegister() {
+	       Intent registerIntent = new Intent("android.intent.action.Register");
+			startActivity(registerIntent);	
+	}
 	public void quit() { // quit method
 		finish(); //exit application
 	}
