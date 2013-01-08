@@ -47,21 +47,7 @@ public class MainMenu extends Activity implements SensorEventListener {
 	String savePassword; //string to save password
 	String loadUsername; //string to load username
 	String loadPassword; //string to load password
-	
-	private ViewGroup layoutmain;
-	private ViewGroup layoutnext;
-	
-	private Button btn_MainLast;
-	private Button btn_MainNext;
-	private Button btn_NextLast;
-	private Button btn_NextNext;
-	
-	private Rotate3D lQuest1Animation;
-	private Rotate3D lQuest2Animation;
-	private Rotate3D rQuest1Animation;
-	private Rotate3D rQuest2Animation;
-	private int mCenterX = 160;	
-	private int mCenterY = 240;		
+
 	//public so other activities can use it, static so we dont change it
 	public static String saveFile = "sharedpref"; //file of saved contents
 	SharedPreferences sharedData;
