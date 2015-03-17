@@ -1,0 +1,1 @@
+It is an example of a heterogeneous environment with several distributed communicating units. A term that also may be used is Ubiquitous Computing, or UbiComp.
